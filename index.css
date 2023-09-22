@@ -9,6 +9,8 @@ h1 {
   text-align: center;
   color: #fff;
   font-size: 45px;
+  position: absolute;
+  top: 40px;
 }
 .container {
   max-width: 800px;
@@ -17,7 +19,7 @@ h1 {
   margin: 0 auto;
   padding-top: 40px;
   overflow: hidden;
-  position: relative;
+  /* position: relative; */
 }
 .bird {
   margin: 0 auto;
@@ -33,8 +35,10 @@ h1 {
 }
 .flowers {
   position: absolute;
-  top: 200px;
-  left: 100px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 0;
   opacity: 0.8;
+  width: 100%;
 }
