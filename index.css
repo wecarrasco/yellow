@@ -1,10 +1,15 @@
 body {
   margin-top: 100px;
+  background: -webkit-linear-gradient(
+    rgba(116, 196, 185, 0.9),
+    rgba(132, 160, 198, 0.4)
+  );
   background: linear-gradient(
     rgba(116, 196, 185, 0.9),
     rgba(132, 160, 198, 0.4)
   );
 }
+
 h1 {
   text-align: center;
   color: #fff;
@@ -12,6 +17,7 @@ h1 {
   position: absolute;
   top: 40px;
 }
+
 .container {
   max-width: 800px;
   width: 100%;
@@ -19,13 +25,14 @@ h1 {
   margin: 0 auto;
   padding-top: 40px;
   overflow: hidden;
-  /* position: relative; */
 }
+
 .bird {
   margin: 0 auto;
   max-width: 900px;
   width: 100%;
   height: auto;
+  -webkit-transform: translate(-200px);
   transform: translate(-200px);
   visibility: hidden;
   position: absolute;
@@ -33,11 +40,13 @@ h1 {
   top: 50%;
   z-index: 10;
 }
+
 .flowers {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
   z-index: 0;
   opacity: 0.8;
   width: 100%;
